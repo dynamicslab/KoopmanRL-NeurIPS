@@ -8,13 +8,54 @@ title: Koopman-Assisted Reinforcement Learning
 
 The Bellman equation and its continuous form, the Hamilton-Jacobi-Bellman (HJB) equation, are ubiquitous in reinforcement learning (RL) and control theory contexts due, in part, to their guaranteed convergence towards a system’s optimal value function. However, this approach has severe limitations. This paper explores the connection between the data-driven Koopman operator and Bellman Markov Decision Processes, resulting in the development of two new RL algorithms to address these limitations. In particular, we focus on Koopman operator methods that reformulate a nonlinear system by lifting into new coordinates where the dynamics become linear, and where HJB-based methods are more tractable. These transformations enable the estimation, prediction, and control of strongly nonlinear dynamics. Viewing the Bellman equation as a controlled dynamical system, the Koopman operator is able to capture the expectation of the time evolution of the value function in the given systems via linear dynamics in the lifted coordinates. By parameterizing the Koopman operator with the control actions, we construct a new _Koopman tensor_ that facilitates the estimation of the optimal value function. Then, a transformation of Bellman’s framework in terms of the Koopman tensor enables us to reformulate two max-entropy RL algorithms: soft-value iteration and soft actor-critic (SAC). This highly flexible framework can be used for deterministic or stochastic systems as well as for discrete or continuous-time dynamics. Finally, we show that these algorithms attain state-of-the-art (SOTA) performance with respect to traditional neural network-based SAC and linear quadratic regulator (LQR) baselines on three controlled dynamical systems: the Lorenz system, fluid flow past a cylinder, and a double-well potential with non-isotropic stochastic forcing. It does this all while maintaining an interpretability that shows how inputs tend to affect outputs, what we call _input-output_ interpretability.
 
+## Koopman Reinforcement Learning
+
+### The Construction of the Koopman Tensor
+
+![KoopmanOp](Koopman_operator_for_nonlinear_systems.png)
+
+![KoopmanTensor](koopman_tensor.jpeg)
+
+### Deriving Koopman-Variants of Maximum Entropy Reinforcement Learning Algorithms
+
+Using the Koopman tensor machinery we are then able to fuse the Koopman tensor approach with existing maximum entropy reinforcement learning algorithms:
+
+#### Soft Actor Koopman Critic
+
+![KSAC](KSAC.png)
+
+#### Soft Koopman Value Iteration
+
+![KVI](Koopman_Value_Iteration.png)
+
+### Experimental Evaluation
+
+The set of environments to evaluate the performance of our Koopman-infused reinforcement learning algorithms
+
+![Experiments](EnvironmentsFigure.png)
+
+On which we then compare our reinforcement learning algorithms with the [CleanRL]() implementations of 
+
+* The Q-function based Soft Actor-Critic, in our graphs called _SAC (Q)_
+* The Value-function based Soft Actor-Critic, in our graphs called _SAC (V)_
+
+and the classical control baseline of the linear quadratic controller (LRQ). Giving us the following performance across environments
+
+![Results](results.png)
+
+To briefly summarize these results:
+
+* We reach SOTA on the linear system after only 5,000 environment steps, outpacing the Q-function based SAC
+* The Soft Actor Koopman Critic (SAKC) consistently converges, showcasing adaptability and closely tracking existing SAC implementations
+* The pre-trained Soft Koopman Value Iteration (SKVI) consistently achieves optimal returns alongside Soft Actor Koopman Critic, and the Soft Actor-Critic baselines
+
 ## Authors
 
 <center>
 <div class="row1">
     <div style="float:left;margin-right:20px;">
         <img src="rozwood.png" height="200" width="200" alt="preston" />
-        <p style="text-align:center;"><a href="https://github.com/Pdbz199">Preston Rozwood</a></p>
+        <p style="text-align:center;"><a href="https://www.linkedin.com/in/preston-rozwood/">Preston Rozwood</a></p>
     </div>
     <div style="float:left;margin-right:20px;">
         <img class="middle-img" src="mehrez.jpg" height="200" width="200" alt="ludger" />
