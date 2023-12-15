@@ -37,13 +37,13 @@
       
       
         <a href="" class="btn">ArXiv Preprint (coming soon)</a>
-        <a href="" class="btn">NeurIPS WS Paper</a>
-        <a href="" class="btn">Code</a>
+        <a href="https://openreview.net/forum?id=IaUDEYN48p" class="btn">OpenReview</a>
+        <a href="https://github.com/Pdbz199/koopman-rl" class="btn">Code</a>
       
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h1 id="abstract">Abstract</h1>
+      <h2 id="abstract">Abstract</h2>
 
 <p>The Bellman equation and its continuous form, the Hamilton-Jacobi-Bellman (HJB) equation, are ubiquitous in reinforcement learning (RL) and control theory contexts due, in part, to their guaranteed convergence towards a system’s optimal value function. However, this approach has severe limitations. This paper explores the connection between the data-driven Koopman operator and Bellman Markov Decision Processes, resulting in the development of two new RL algorithms to address these limitations. In particular, we focus on Koopman operator methods that reformulate a nonlinear system by lifting into new coordinates where the dynamics become linear, and where HJB-based methods are more tractable. These transformations enable the estimation, prediction, and control of strongly nonlinear dynamics. Viewing the Bellman equation as a controlled dynamical system, the Koopman operator is able to capture the expectation of the time evolution of the value function in the given systems via linear dynamics in the lifted coordinates. By parameterizing the Koopman operator with the control actions, we construct a new <em>Koopman tensor</em> that facilitates the estimation of the optimal value function. Then, a transformation of Bellman’s framework in terms of the Koopman tensor enables us to reformulate two max-entropy RL algorithms: soft-value iteration and soft actor-critic (SAC). This highly flexible framework can be used for deterministic or stochastic systems as well as for discrete or continuous-time dynamics. Finally, we show that these algorithms attain state-of-the-art (SOTA) performance with respect to traditional neural network-based SAC and linear quadratic regulator (LQR) baselines on three controlled dynamical systems: the Lorenz system, fluid flow past a cylinder, and a double-well potential with non-isotropic stochastic forcing. It does this all while maintaining an interpretability that shows how inputs tend to affect outputs, what we call <em>input-output</em> interpretability.</p>
 
@@ -172,13 +172,39 @@
 
 <h2 id="authors">Authors</h2>
 
-<ul>
-  <li>Preston Rozwood</li>
-  <li>Edward Mehrez</li>
-  <li>Ludger Paehler</li>
-  <li>Wen Sun</li>
-  <li>Steven L. Brunton</li>
-</ul>
+<center>
+<div class="row1">
+    <div style="float:left;margin-right:20px;">
+        <img src="rozwood.png" height="200" width="200" alt="preston" />
+        <p style="text-align:center;"><a href="https://github.com/Pdbz199">Preston Rozwood</a></p>
+    </div>
+    <div style="float:left;margin-right:20px;">
+        <img class="middle-img" src="mehrez.jpg" height="200" width="200" alt="ludger" />
+        <p style="text-align:center;"><a href="https://www.linkedin.com/in/edward-mehrez-aa316082">Edward Mehrez</a></p>
+    </div>
+</div>
+ </center>
+
+<p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+
+<div class="row2">
+    <center>
+    <div style="float:left;margin-right:20px;">
+        <img src="paehler.png" height="200" width="200" alt="tal" />
+        <p style="text-align:center;"><a href="https://ludger.fyi">Ludger Paehler</a></p>
+    </div>
+    <div style="float:left;margin-right:20px;">
+        <img class="middle-img" src="sun.png" height="200" width="200" alt="jacob" />
+        <p style="text-align:center;"><a href="https://wensun.github.io">Wen Sun</a></p>
+    </div>
+    <div style="float:left;margin-right:20px;">
+        <img src="brunton.png" height="200" width="200" alt="william" />
+        <p style="text-align:center;"><a href="https://www.eigensteve.com">Steven L. Brunton</a></p>
+    </div>
+    </center>
+</div>
+
+<p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
 
 <h2 id="corresponding-authors">Corresponding Authors</h2>
 

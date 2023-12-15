@@ -89,11 +89,40 @@ end
 
 ## Authors
 
-* Preston Rozwood
-* Edward Mehrez
-* Ludger Paehler
-* Wen Sun
-* Steven L. Brunton
+<center>
+<div class="row1">
+    <div style="float:left;margin-right:20px;">
+        <img src="rozwood.png" height="200" width="200" alt="preston" />
+        <p style="text-align:center;"><a href="https://github.com/Pdbz199">Preston Rozwood</a></p>
+    </div>
+    <div style="float:left;margin-right:20px;">
+        <img class="middle-img" src="mehrez.jpg" height="200" width="200" alt="ludger" />
+        <p style="text-align:center;"><a href="https://www.linkedin.com/in/edward-mehrez-aa316082">Edward Mehrez</a></p>
+    </div>
+</div>
+ </center>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div class="row2">
+    <center>
+    <div style="float:left;margin-right:20px;">
+        <img src="paehler.png" height="200" width="200" alt="tal" />
+        <p style="text-align:center;"><a href="https://ludger.fyi">Ludger Paehler</a></p>
+    </div>
+    <div style="float:left;margin-right:20px;">
+        <img class="middle-img" src="sun.png" height="200" width="200" alt="jacob" />
+        <p style="text-align:center;"><a href="https://wensun.github.io">Wen Sun</a></p>
+    </div>
+    <div style="float:left;margin-right:20px;">
+        <img src="brunton.png" height="200" width="200" alt="william" />
+        <p style="text-align:center;"><a href="https://www.eigensteve.com">Steven L. Brunton</a></p>
+    </div>
+    </center>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 
 ## Corresponding Authors
 
