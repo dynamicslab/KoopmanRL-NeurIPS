@@ -12,7 +12,23 @@ The Bellman equation and its continuous form, the Hamilton-Jacobi-Bellman (HJB) 
 
 ### The Construction of the Koopman Tensor
 
+To bring the Koopman operator into modern reinforcement learning, we rely on the following key insight belying Koopman operator theory
+
+> Non-linear dynamics can be represented in terms of the infinite-dimensional Koopman operator, acting on the space of all possible measurement functions
+
+We then presume an infinite-horizon MDP Bellman Equation with a cost function c:
+
+![InfiniteHorizon](InfiniteHorizonBellman.png)
+
+Which we then use the re-express the MDP in terms of the Koopman operator
+
+![MDPplusKoopman](MDPplusKoopman.png)
+
+Figuratively we hence lift the non-linear dynamics into a vector space where the the dynamics are approximately linear, and can then push forward the dynamics of the system using the Koopman operator.
+
 ![KoopmanOp](Koopman_operator_for_nonlinear_systems.png)
+
+For this we have to presume the existence of a Koopman invariant (function) subspace on which we can represent the dynamics of the value function using only a finite dictionary. In addition we have to presume multiplicative separation on the dictionary space in state and control. This core technique to our approach is summarized in the _Koopman Tensor_:
 
 ![KoopmanTensor](koopman_tensor.jpeg)
 
