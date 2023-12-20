@@ -77,7 +77,7 @@ To briefly summarize these results:
         <p style="text-align:center;"><a href="https://www.linkedin.com/in/preston-rozwood/">Preston Rozwood</a></p>
     </div>
     <div style="float:left;margin-right:20px;">
-        <img class="middle-img" src="mehrez.jpg" height="200" width="200" alt="ludger" />
+        <img class="middle-img" src="mehrez.jpg" height="200" width="200" alt="edward" />
         <p style="text-align:center;"><a href="https://www.linkedin.com/in/edward-mehrez-aa316082">Edward Mehrez</a></p>
     </div>
     </center>
@@ -86,15 +86,15 @@ To briefly summarize these results:
 <div class="row2">
     <center>
     <div style="float:left;margin-right:20px;">
-        <img src="paehler.png" height="200" width="200" alt="tal" />
+        <img src="paehler.png" height="200" width="200" alt="ludger" />
         <p style="text-align:center;"><a href="https://ludger.fyi">Ludger Paehler</a></p>
     </div>
     <div style="float:left;margin-right:20px;">
-        <img class="middle-img" src="sun.png" height="200" width="200" alt="jacob" />
+        <img class="middle-img" src="sun.png" height="200" width="200" alt="wen" />
         <p style="text-align:center;"><a href="https://wensun.github.io">Wen Sun</a></p>
     </div>
     <div style="float:left;margin-right:20px;">
-        <img src="brunton.png" height="200" width="200" alt="william" />
+        <img src="brunton.png" height="200" width="200" alt="steven" />
         <p style="text-align:center;"><a href="https://www.eigensteve.com">Steven L. Brunton</a></p>
     </div>
     </center>
