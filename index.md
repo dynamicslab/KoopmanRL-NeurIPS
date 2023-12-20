@@ -67,8 +67,11 @@ To briefly summarize these results:
 
 ## Authors
 
-<center>
+<div style="display:table">
+
+
 <div class="row1">
+    <center>
     <div style="float:left;margin-right:20px;">
         <img src="rozwood.png" height="200" width="200" alt="preston" />
         <p style="text-align:center;"><a href="https://www.linkedin.com/in/preston-rozwood/">Preston Rozwood</a></p>
@@ -77,10 +80,8 @@ To briefly summarize these results:
         <img class="middle-img" src="mehrez.jpg" height="200" width="200" alt="ludger" />
         <p style="text-align:center;"><a href="https://www.linkedin.com/in/edward-mehrez-aa316082">Edward Mehrez</a></p>
     </div>
+    </center>
 </div>
- </center>
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <div class="row2">
     <center>
@@ -99,7 +100,7 @@ To briefly summarize these results:
     </center>
 </div>
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
 
 
 ## Corresponding Authors
